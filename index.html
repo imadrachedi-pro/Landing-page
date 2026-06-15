@@ -108,6 +108,16 @@
   .plat-card .m{font-size:1.7rem;font-weight:800;color:var(--gold);line-height:1}
   .plat-card .m small{display:block;font-size:.8rem;font-weight:500;color:#9aa6c0;margin-top:4px}
   .data-note{margin-top:26px;font-size:.82rem;color:#7e89a3;text-align:center}
+  .transparency{background:rgba(255,255,255,.05);border-left:3px solid var(--gold);padding:14px 18px;border-radius:8px;margin-bottom:32px;font-size:.88rem;color:#C9D1E0}
+  .case-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .case-card{background:var(--navy2);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:30px}
+  .case-card .tag{font-size:.72rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+  .case-card h3{color:#fff;font-size:1.15rem;margin:8px 0 5px}
+  .case-card .obj{color:#9aa6c0;font-size:.88rem;margin-bottom:22px}
+  .case-card .metrics{display:flex;gap:30px;flex-wrap:wrap}
+  .case-card .metric .big{font-size:2.1rem;font-weight:800;color:var(--gold);line-height:1;display:block}
+  .case-card .metric small{color:#B9C2D6;font-size:.82rem;margin-top:6px;display:block}
+  .case-foot{margin-top:22px;font-size:.76rem;color:#7e89a3}
 
   /* Automatisation (cream) + cas concret coach */
   .auto-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
@@ -167,7 +177,7 @@
       padding:24px;gap:18px;transform:translateY(-130%);transition:transform .35s;border-bottom:1px solid var(--line)}
     .nav-links.open{transform:none}
     .burger{display:flex}
-    .cards,.steps,.plat-cards,.stats-row{grid-template-columns:1fr}
+    .cards,.steps,.plat-cards,.case-cards,.stats-row{grid-template-columns:1fr}
     .hero h1{font-size:2.2rem}
     .shead h2{font-size:1.9rem}
   }
@@ -211,7 +221,7 @@
 <div class="platforms">
   <div class="wrap">
     <span class="pf-label">Je gère vos campagnes sur</span>
-    <b>Meta Ads</b><b>Google Ads</b><b>DV360</b><b>TikTok Ads</b><b>Pinterest</b><b>The Trade Desk</b><b>Zemanta</b><span class="more">…</span>
+    <b>Meta Ads</b><b>DV360</b><b>TikTok Ads</b><b>Pinterest</b><b>The Trade Desk</b><b>Zemanta</b><span class="more">…</span>
   </div>
 </div>
 
@@ -259,38 +269,41 @@
   </div>
 </section>
 
-<!-- RESULTATS MEDIA BUYING (chiffres placeholder, à compléter) -->
+<!-- RESULTATS MEDIA BUYING -->
 <section id="resultats" class="results">
   <div class="wrap">
     <div class="shead reveal">
       <span class="eyebrow">Mes résultats</span>
-      <h2>Des campagnes qui performent, plateforme par plateforme</h2>
-      <p class="lead">Un aperçu de mes performances en media buying. Chaque plateforme, ses leviers, ses résultats.</p>
+      <h2>Des campagnes qui performent, levier par levier</h2>
+      <p class="lead">Un aperçu de performances concrètes en media buying, plateforme par plateforme.</p>
     </div>
     <div class="stats-row reveal">
-      <div class="stat"><span class="num">XXX K€</span><small>Budget publicitaire géré</small></div>
-      <div class="stat"><span class="num">X,X×</span><small>ROAS moyen</small></div>
-      <div class="stat"><span class="num">+X XXX</span><small>Leads générés</small></div>
-      <div class="stat"><span class="num">XX</span><small>Campagnes pilotées</small></div>
+      <div class="stat"><span class="num">+2,6 M€</span><small>Budget publicitaire géré</small></div>
+      <div class="stat"><span class="num">+100</span><small>Campagnes pilotées</small></div>
+      <div class="stat"><span class="num">+10</span><small>Plateformes (dont Meta Ads)</small></div>
+      <div class="stat"><span class="num">+10</span><small>Pays couverts</small></div>
     </div>
-    <div class="plat-cards">
-      <div class="plat-card reveal">
-        <span class="tag">Paid Social</span>
-        <h3>Meta Ads · TikTok · Pinterest</h3>
-        <div class="m">X,X×<small>ROAS moyen — acquisition &amp; retargeting</small></div>
+    <p class="transparency reveal">Ces campagnes ont été pilotées dans le cadre de mon expérience en agence. Les annonceurs sont rendus anonymes par souci de confidentialité. Ces cases studies ne sont qu'un échantillion. </p>
+    <div class="case-cards">
+      <div class="case-card reveal">
+        <span class="tag">Paid Social · Meta Ads</span>
+        <h3>Secteur du tourisme · Europe</h3>
+        <p class="obj">Objectif : considération (génération de leads)</p>
+        <div class="metrics">
+          <div class="metric"><span class="big">-56%</span><small>Coût par lead</small></div>
+          <div class="metric"><span class="big">-38%</span><small>CPM vs benchmark global*</small></div>
+        </div>
       </div>
-      <div class="plat-card reveal">
-        <span class="tag">Paid Search</span>
-        <h3>Google Ads</h3>
-        <div class="m">X €<small>Coût par lead — Search &amp; Display</small></div>
-      </div>
-      <div class="plat-card reveal">
-        <span class="tag">Programmatique</span>
-        <h3>DV360 · The Trade Desk · Zemanta</h3>
-        <div class="m">+X XXX<small>Conversions générées en programmatique</small></div>
+      <div class="case-card reveal">
+        <span class="tag">Display · DV360</span>
+        <h3>Secteur du divertissement · MEA</h3>
+        <p class="obj">Objectif : conversion (acquisition)</p>
+        <div class="metrics">
+          <div class="metric"><span class="big">-48%</span><small>Coût par acquisition</small></div>
+        </div>
       </div>
     </div>
-    <p class="data-note">Chiffres à compléter avec tes vraies données (Readymag).</p>
+    <p class="case-foot">* CPM inférieur au benchmark global du marché sur la zone concernée. Chiffres relatifs, annonceurs anonymisés.</p>
   </div>
 </section>
 
