@@ -6,9 +6,13 @@
 <title>Imad Hachemi-Rachedi — Media Buyer & Publicité qui performe</title>
 <meta name="description" content="Je booste votre activité, vous vous occupez du reste. Campagnes publicitaires Meta Ads, Google Ads, DV360 et programmatique, conçues pour générer des leads qualifiés." />
 
-<!-- ===== TRACKING PIXELS — À COMPLÉTER PLUS TARD =====
-     Colle ici ton Meta Pixel et/ou ton Google tag (on s'en occupera ensemble).
-============================================================ -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-589VN447');</script>
+<!-- End Google Tag Manager -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -185,6 +189,10 @@
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-589VN447"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <header id="hdr">
   <div class="wrap nav">
@@ -435,7 +443,9 @@
     try {
       await fetch(WEBHOOK_URL, { method:'POST', mode:'no-cors',
         body:new URLSearchParams(data) });
-      msg.textContent = "Merci ! Votre demande a bien été envoyée. Je reviens vers vous rapidement.";
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'generate_lead', secteur: data.secteur });
+      msg.textContent = `Merci ${data.prenom} ! Votre demande est bien arrivée. Je reviens vers vous très rapidement pour parler de votre projet.`;
       msg.classList.add('ok'); form.reset();
     } catch (err) {
       msg.textContent = "Oups, l'envoi a échoué. Réessayez ou écrivez-moi à imad.rachedi.pro@gmail.com.";
