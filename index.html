@@ -204,7 +204,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="#services">Services</a>
       <a href="#process">Méthode</a>
       <a href="#resultats">Résultats</a>
-      <a href="#contact" class="btn btn-gold nav-cta">Prendre contact</a>
+      <a href="#contact" class="btn btn-gold nav-cta cta-track" data-cta="contact_header">Prendre contact</a>
     </nav>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -218,8 +218,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h1>Je booste votre activité, <span class="hl">vous vous occupez du reste.</span></h1>
       <p class="sub">Vos pubs calent ? Je relance le moteur — et les leads suivent.</p>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-gold">Lancer mes campagnes</a>
-        <a href="#resultats" class="btn btn-ghost">Voir mes résultats</a>
+        <a href="#contact" class="btn btn-gold cta-track" data-cta="hero_lancer_campagnes">Lancer mes campagnes</a>
+        <a href="#resultats" class="btn btn-ghost cta-track" data-cta="hero_voir_resultats">Voir mes résultats</a>
       </div>
       <p class="hero-note">Stratégie · Création · Optimisation · Reporting — sur devis.</p>
     </div>
@@ -424,6 +424,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
   }, { threshold:.15 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Tracking des clics sur les boutons CTA (pour GTM / GA4)
+  document.querySelectorAll('.cta-track').forEach(b => {
+    b.addEventListener('click', () => {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'cta_click', cta_label: b.dataset.cta });
+    });
+  });
 
   const form = document.getElementById('leadForm'), msg = document.getElementById('formMsg'), btn = document.getElementById('submitBtn');
   form.addEventListener('submit', async (e) => {
