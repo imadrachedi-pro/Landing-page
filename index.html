@@ -434,7 +434,7 @@
     btn.disabled = true; btn.textContent = "Envoi…";
     try {
       await fetch(WEBHOOK_URL, { method:'POST', mode:'no-cors',
-        headers:{'Content-Type':'application/json'}, body:JSON.stringify(data) });
+        body:new URLSearchParams(data) });
       msg.textContent = "Merci ! Votre demande a bien été envoyée. Je reviens vers vous rapidement.";
       msg.classList.add('ok'); form.reset();
     } catch (err) {
