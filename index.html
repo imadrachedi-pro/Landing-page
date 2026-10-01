@@ -14,6 +14,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-589VN447');</script>
 <!-- End Google Tag Manager -->
 
+<link rel="canonical" href="https://imad-mediabuyer.pages.dev/" />
+
+<!-- Open Graph / aperçu LinkedIn, WhatsApp, Slack -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://imad-mediabuyer.pages.dev/" />
+<meta property="og:site_name" content="Imad Hachemi-Rachedi" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:title" content="Imad Hachemi-Rachedi — Media Buyer &amp; Publicité qui performe" />
+<meta property="og:description" content="Je booste votre activité, vous vous occupez du reste. Vos pubs calent ? Je relance le moteur — et les leads suivent." />
+<meta property="og:image" content="https://imad-mediabuyer.pages.dev/og-fr.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Imad Hachemi-Rachedi, Media Buyer : +2,6 M€ de budget géré, +100 campagnes, +10 pays." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Imad Hachemi-Rachedi — Media Buyer &amp; Publicité qui performe" />
+<meta name="twitter:description" content="Je booste votre activité, vous vous occupez du reste. Vos pubs calent ? Je relance le moteur — et les leads suivent." />
+<meta name="twitter:image" content="https://imad-mediabuyer.pages.dev/og-fr.png" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -209,6 +228,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .case2 .metric small{color:#B9C2D6;font-size:.77rem;margin-top:5px;display:block}
   @media(max-width:900px){.cases2{grid-template-columns:1fr 1fr}}
   @media(max-width:560px){.cases2{grid-template-columns:1fr}}
+  /* Switch de langue FR / EN */
+  .lang-switch{display:flex;gap:2px;background:var(--cream2);border:1px solid var(--line);border-radius:999px;padding:3px;margin-left:18px}
+  .lang-btn{border:none;background:transparent;font-family:inherit;font-size:.78rem;font-weight:700;letter-spacing:.04em;
+    color:var(--gray);padding:6px 13px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s}
+  .lang-btn:hover{color:var(--navy)}
+  .lang-btn.is-active{background:var(--navy);color:var(--white)}
+  .testi-note{margin-top:20px;text-align:center;font-size:.78rem;color:var(--gray-lt)}
+  .testi-note:empty{display:none}
+  @media(max-width:560px){.lang-switch{margin-left:auto;margin-right:14px}}
+
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
   .reveal.in{opacity:1;transform:none}
   @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
@@ -243,16 +272,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap nav">
     <a href="#" class="brand">
       <img src="logo.png" alt="Logo Imad Hachemi-Rachedi" />
-      <span>Imad Hachemi-Rachedi<small>Media Buyer · Publicité performante</small></span>
+      <span>Imad Hachemi-Rachedi<small data-i18n="nav.sub">Media Buyer · Publicité performante</small></span>
     </a>
     <nav class="nav-links" id="menu">
-      <a href="#services">Services</a>
-      <a href="#process">Méthode</a>
-      <a href="#resultats">Résultats</a>
-      <a href="#avis">Avis</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact" class="btn btn-gold nav-cta cta-track" data-cta="contact_header">Prendre contact</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#process" data-i18n="nav.process">Méthode</a>
+      <a href="#resultats" data-i18n="nav.results">Résultats</a>
+      <a href="#avis" data-i18n="nav.reviews">Avis</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" class="btn btn-gold nav-cta cta-track" data-cta="contact_header" data-i18n="nav.contact">Prendre contact</a>
     </nav>
+    <div class="lang-switch" role="group" aria-label="Language / Langue">
+      <button type="button" class="lang-btn is-active" data-lang="fr" aria-pressed="true">FR</button>
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -261,14 +294,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="hero">
   <div class="wrap">
     <div class="inner reveal">
-      <span class="eyebrow">Media Buying · Publicité en ligne</span>
-      <h1>Je booste votre activité, <span class="hl">vous vous occupez du reste.</span></h1>
-      <p class="sub">Vos pubs calent ? Je relance le moteur — et les leads suivent.</p>
+      <span class="eyebrow" data-i18n="hero.eyebrow">Media Buying · Publicité en ligne</span>
+      <h1 data-i18n="hero.h1">Je booste votre activité, <span class="hl">vous vous occupez du reste.</span></h1>
+      <p class="sub" data-i18n="hero.sub">Vos pubs calent ? Je relance le moteur — et les leads suivent.</p>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-gold cta-track" data-cta="hero_lancer_campagnes">Lancer mes campagnes</a>
-        <a href="#resultats" class="btn btn-ghost cta-track" data-cta="hero_voir_resultats">Voir mes résultats</a>
+        <a href="#contact" class="btn btn-gold cta-track" data-cta="hero_lancer_campagnes" data-i18n="hero.cta1">Lancer mes campagnes</a>
+        <a href="#resultats" class="btn btn-ghost cta-track" data-cta="hero_voir_resultats" data-i18n="hero.cta2">Voir mes résultats</a>
       </div>
-      <p class="hero-note">Stratégie · Création · Optimisation · Reporting — sur devis.</p>
+      <p class="hero-note" data-i18n="hero.note">Stratégie · Création · Optimisation · Reporting — sur devis.</p>
     </div>
   </div>
 </section>
@@ -276,7 +309,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- PLATEFORMES -->
 <div class="platforms">
   <div class="wrap">
-    <span class="pf-label">Je gère vos campagnes sur</span>
+    <span class="pf-label" data-i18n="platforms.label">Je gère vos campagnes sur</span>
     <b>Meta Ads</b><b>DV360</b><b>TikTok Ads</b><b>Pinterest</b><b>The Trade Desk</b><b>Zemanta</b><span class="more">…</span>
   </div>
 </div>
@@ -285,25 +318,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="services">
   <div class="wrap">
     <div class="shead reveal">
-      <span class="eyebrow">Ce que je fais</span>
-      <h2>Une publicité pensée pour ramener des clients</h2>
-      <p class="lead">Branding, notoriété, performance — à chaque objectif sa stratégie. Je m'occupe de toute la chaîne, vous suivez les résultats.</p>
+      <span class="eyebrow" data-i18n="services.eyebrow">Ce que je fais</span>
+      <h2 data-i18n="services.h2">Une publicité pensée pour ramener des clients</h2>
+      <p class="lead" data-i18n="services.lead">Branding, notoriété, performance — à chaque objectif sa stratégie. Je m'occupe de toute la chaîne, vous suivez les résultats.</p>
     </div>
     <div class="cards">
       <div class="card reveal">
         <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#E0B25C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="#E0B25C"/></svg></div>
-        <h3>Stratégie &amp; ciblage</h3>
-        <p>J'identifie vos meilleures audiences et je bâtis un plan d'acquisition aligné sur vos objectifs réels.</p>
+        <h3 data-i18n="s1.h">Stratégie &amp; ciblage</h3>
+        <p data-i18n="s1.p">J'identifie vos meilleures audiences et je bâtis un plan d'acquisition aligné sur vos objectifs réels.</p>
       </div>
       <div class="card reveal">
         <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#E0B25C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-7-7 18-2.5-7.5L3 11z"/></svg></div>
-        <h3>Création &amp; lancement</h3>
-        <p>Visuels et messages qui accrochent, campagnes structurées et lancées proprement sur les bonnes plateformes.</p>
+        <h3 data-i18n="s2.h">Création &amp; lancement</h3>
+        <p data-i18n="s2.p">Visuels et messages qui accrochent, campagnes structurées et lancées proprement sur les bonnes plateformes.</p>
       </div>
       <div class="card reveal">
         <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#E0B25C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 16l4-5 3 3 4-7"/></svg></div>
-        <h3>Optimisation &amp; reporting</h3>
-        <p>Je surveille, j'ajuste et je vous rends compte clairement : ce qui marche, ce que ça rapporte, où l'on va.</p>
+        <h3 data-i18n="s3.h">Optimisation &amp; reporting</h3>
+        <p data-i18n="s3.p">Je surveille, j'ajuste et je vous rends compte clairement : ce qui marche, ce que ça rapporte, où l'on va.</p>
       </div>
     </div>
   </div>
@@ -313,14 +346,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="process" class="process">
   <div class="wrap">
     <div class="shead reveal">
-      <span class="eyebrow">Comment ça se passe</span>
-      <h2>Une méthode simple, du premier contact aux résultats</h2>
+      <span class="eyebrow" data-i18n="process.eyebrow">Comment ça se passe</span>
+      <h2 data-i18n="process.h2">Une méthode simple, du premier contact aux résultats</h2>
     </div>
     <div class="steps">
-      <div class="step reveal"><div class="num">1</div><h3>Audit</h3><p>On fait le point sur votre activité, vos objectifs et vos campagnes actuelles.</p></div>
-      <div class="step reveal"><div class="num">2</div><h3>Stratégie</h3><p>Je conçois le plan d'acquisition : audiences, messages, budget, plateformes.</p></div>
-      <div class="step reveal"><div class="num">3</div><h3>Lancement</h3><p>Je crée et lance vos campagnes, prêtes à capter des leads dès le jour 1.</p></div>
-      <div class="step reveal"><div class="num">4</div><h3>Optimisation</h3><p>J'analyse, j'ajuste et je fais monter les performances en continu.</p></div>
+      <div class="step reveal"><div class="num">1</div><h3 data-i18n="p1.h">Audit</h3><p data-i18n="p1.p">On fait le point sur votre activité, vos objectifs et vos campagnes actuelles.</p></div>
+      <div class="step reveal"><div class="num">2</div><h3 data-i18n="p2.h">Stratégie</h3><p data-i18n="p2.p">Je conçois le plan d'acquisition : audiences, messages, budget, plateformes.</p></div>
+      <div class="step reveal"><div class="num">3</div><h3 data-i18n="p3.h">Lancement</h3><p data-i18n="p3.p">Je crée et lance vos campagnes, prêtes à capter des leads dès le jour 1.</p></div>
+      <div class="step reveal"><div class="num">4</div><h3 data-i18n="p4.h">Optimisation</h3><p data-i18n="p4.p">J'analyse, j'ajuste et je fais monter les performances en continu.</p></div>
     </div>
   </div>
 </section>
@@ -329,74 +362,73 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="resultats" class="results">
   <div class="wrap">
     <div class="shead reveal">
-      <span class="eyebrow">Mes résultats</span>
-      <h2>Des campagnes qui performent, levier par levier</h2>
-      <p class="lead">Un aperçu de performances concrètes en media buying, plateforme par plateforme.</p>
+      <span class="eyebrow" data-i18n="results.eyebrow">Mes résultats</span>
+      <h2 data-i18n="results.h2">Des campagnes qui performent, levier par levier</h2>
+      <p class="lead" data-i18n="results.lead">Un aperçu de performances concrètes en media buying, plateforme par plateforme.</p>
     </div>
     <div class="stats-row reveal">
-      <div class="stat"><span class="num">+2,6 M€</span><small>Budget publicitaire géré</small></div>
-      <div class="stat"><span class="num">+100</span><small>Campagnes pilotées</small></div>
-      <div class="stat"><span class="num">+10</span><small>Plateformes (dont Meta Ads)</small></div>
-      <div class="stat"><span class="num">+10</span><small>Pays couverts</small></div>
+      <div class="stat"><span class="num" data-i18n="stat1.n">+2,6 M€</span><small data-i18n="stat1.l">Budget publicitaire géré</small></div>
+      <div class="stat"><span class="num" data-i18n="stat2.n">+100</span><small data-i18n="stat2.l">Campagnes pilotées</small></div>
+      <div class="stat"><span class="num" data-i18n="stat3.n">+10</span><small data-i18n="stat3.l">Plateformes (dont Meta Ads)</small></div>
+      <div class="stat"><span class="num" data-i18n="stat4.n">+10</span><small data-i18n="stat4.l">Pays couverts</small></div>
     </div>
-    <p class="transparency reveal">Voici un échantillon de mes +100 campagnes, pilotées dans le cadre de mon expérience en agence. Les annonceurs sont rendus anonymes par souci de confidentialité.</p>
-    <div class="cases2">
+    <p class="transparency reveal" data-i18n="results.note">Voici un échantillon de mes +100 campagnes, pilotées dans le cadre de mon expérience en agence. Les annonceurs sont rendus anonymes par souci de confidentialité.</p>
+    <div class="cases2">      <div class="case2 reveal">
+        <div class="media"><img src="divertissement-parc.png.png" alt="Parc d'attractions" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">Display · DV360</span>
+          <h3 data-i18n="c1.h">Secteur du divertissement · MEA</h3>
+          <p class="obj" data-i18n="c1.o">Objectif : conversion (acquisition)</p>
+          <div class="metrics"><div class="metric"><span class="big">-48%</span><small data-i18n="c1.m1">Coût par acquisition</small></div></div>
+        </div>
+      </div>
       <div class="case2 reveal">
         <div class="media"><img src="tourisme-plage.png.png" alt="Tourisme — destination balnéaire" loading="lazy"></div>
         <div class="body">
           <span class="tag">Paid Social · Meta Ads</span>
-          <h3>Secteur du tourisme · Europe</h3>
-          <p class="obj">Objectif : considération (leads)</p>
-          <div class="metrics"><div class="metric"><span class="big">-56%</span><small>Coût par lead</small></div><div class="metric"><span class="big">-38%</span><small>CPM vs benchmark*</small></div></div>
+          <h3 data-i18n="c2.h">Secteur du tourisme · Europe</h3>
+          <p class="obj" data-i18n="c2.o">Objectif : considération (leads)</p>
+          <div class="metrics"><div class="metric"><span class="big">-56%</span><small data-i18n="c2.m1">Coût par lead</small></div><div class="metric"><span class="big">-38%</span><small data-i18n="c2.m2">CPM vs benchmark*</small></div></div>
         </div>
       </div>
       <div class="case2 reveal">
         <div class="media"><img src="tourisme-hotellerie.png.png" alt="Hôtellerie" loading="lazy"></div>
         <div class="body">
-          <span class="tag">Vidéo · YouTube</span>
-          <h3>Secteur du tourisme</h3>
-          <p class="obj">Objectif : notoriété (vues vidéo)</p>
-          <div class="metrics"><div class="metric"><span class="big">-50%</span><small>Coût / vue vidéo</small></div><div class="metric"><span class="big">-42%</span><small>CPM</small></div></div>
-        </div>
-      </div>
-      <div class="case2 reveal">
-        <div class="media"><img src="divertissement-parc.png.png" alt="Parc d'attractions" loading="lazy"></div>
-        <div class="body">
-          <span class="tag">Display · DV360</span>
-          <h3>Secteur du divertissement · MEA</h3>
-          <p class="obj">Objectif : conversion (acquisition)</p>
-          <div class="metrics"><div class="metric"><span class="big">-48%</span><small>Coût par acquisition</small></div></div>
+          <span class="tag" data-i18n="c3.t">Vidéo · YouTube</span>
+          <h3 data-i18n="c3.h">Secteur du tourisme</h3>
+          <p class="obj" data-i18n="c3.o">Objectif : notoriété (vues vidéo)</p>
+          <div class="metrics"><div class="metric"><span class="big">-50%</span><small data-i18n="c3.m1">Coût / vue vidéo</small></div><div class="metric"><span class="big">-42%</span><small>CPM</small></div></div>
         </div>
       </div>
       <div class="case2 reveal">
         <div class="media"><img src="divertissement-cinema.png.png" alt="Cinéma plein air" loading="lazy"></div>
         <div class="body">
-          <span class="tag">Vidéo · Amazon (Twitch)</span>
-          <h3>Secteur du divertissement</h3>
-          <p class="obj">Objectif : notoriété (vues vidéo)</p>
-          <div class="metrics"><div class="metric"><span class="big">-50%</span><small>Coût / vue vidéo</small></div></div>
+          <span class="tag" data-i18n="c4.t">Vidéo · Amazon (Twitch)</span>
+          <h3 data-i18n="c4.h">Secteur du divertissement</h3>
+          <p class="obj" data-i18n="c4.o">Objectif : notoriété (vues vidéo)</p>
+          <div class="metrics"><div class="metric"><span class="big">-50%</span><small data-i18n="c4.m1">Coût / vue vidéo</small></div></div>
         </div>
       </div>
       <div class="case2 reveal">
         <div class="media"><img src="formation.png.png" alt="Formation et éducation" loading="lazy"></div>
         <div class="body">
           <span class="tag">Display · Xandr</span>
-          <h3>Secteur formation / éducation</h3>
-          <p class="obj">Objectif : génération de leads</p>
-          <div class="metrics"><div class="metric"><span class="big">+57%</span><small>Téléchargements brochure & RDV</small></div></div>
+          <h3 data-i18n="c5.h">Secteur formation / éducation</h3>
+          <p class="obj" data-i18n="c5.o">Objectif : génération de leads</p>
+          <div class="metrics"><div class="metric"><span class="big">+57%</span><small data-i18n="c5.m1">Téléchargements brochure &amp; RDV</small></div></div>
         </div>
       </div>
       <div class="case2 reveal">
         <div class="media"><img src="energie.png.png" alt="Énergie" loading="lazy"></div>
         <div class="body">
           <span class="tag">Display · Xandr</span>
-          <h3>Secteur de l'énergie</h3>
-          <p class="obj">Objectif : acquisition</p>
-          <div class="metrics"><div class="metric"><span class="big">-30 €</span><small>Coût d'acquisition</small></div></div>
+          <h3 data-i18n="c6.h">Secteur de l'énergie</h3>
+          <p class="obj" data-i18n="c6.o">Objectif : acquisition</p>
+          <div class="metrics"><div class="metric"><span class="big" data-i18n="c6.v">-30 €</span><small data-i18n="c6.m1">Coût d'acquisition</small></div></div>
         </div>
       </div>
     </div>
-    <p class="case-foot">* CPM inférieur au benchmark global du marché sur la zone concernée. Chiffres relatifs, annonceurs anonymisés.</p>
+    <p class="case-foot" data-i18n="results.foot">* CPM inférieur au benchmark global du marché sur la zone concernée. Chiffres relatifs, annonceurs anonymisés.</p>
   </div>
 </section>
 
@@ -404,26 +436,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="automatisation">
   <div class="wrap">
     <div class="shead reveal">
-      <span class="eyebrow">Bonus · Au-delà de la pub</span>
-      <h2>J'automatise aussi votre acquisition</h2>
-      <p class="lead">Pendant que vos pubs tournent, j'automatise ce qui vous fait perdre du temps : capture des leads, réponses, suivi, reporting.</p>
+      <span class="eyebrow" data-i18n="auto.eyebrow">Bonus · Au-delà de la pub</span>
+      <h2 data-i18n="auto.h2">J'automatise aussi votre acquisition</h2>
+      <p class="lead" data-i18n="auto.lead">Pendant que vos pubs tournent, j'automatise ce qui vous fait perdre du temps : capture des leads, réponses, suivi, reporting.</p>
     </div>
     <div class="auto-grid">
       <div class="auto-text reveal">
         <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#101C3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
-        <h3>Gagnez des heures chaque semaine</h3>
-        <p>Ce que vous faites à la main chaque jour — relances, saisie, suivi des prospects — l'automatisation peut le faire pour vous, sans erreur et 24h/24.</p>
-        <p>Résultat : vos leads publicitaires sont captés, traités et suivis automatiquement, sans qu'aucun ne passe à la trappe.</p>
-        <p class="mini">Une publicité qui ramène des leads, un système qui les transforme.</p>
+        <h3 data-i18n="auto.h3">Gagnez des heures chaque semaine</h3>
+        <p data-i18n="auto.p1">Ce que vous faites à la main chaque jour — relances, saisie, suivi des prospects — l'automatisation peut le faire pour vous, sans erreur et 24h/24.</p>
+        <p data-i18n="auto.p2">Résultat : vos leads publicitaires sont captés, traités et suivis automatiquement, sans qu'aucun ne passe à la trappe.</p>
+        <p class="mini" data-i18n="auto.mini">Une publicité qui ramène des leads, un système qui les transforme.</p>
       </div>
       <div class="auto-case reveal">
-        <span class="tag">Cas concret · Automatisation</span>
+        <span class="tag" data-i18n="auto.tag">Cas concret · Automatisation</span>
         <div class="big">100%</div>
-        <div class="big-l">des prospects d'un coach reçoivent une réponse instantanée</div>
+        <div class="big-l" data-i18n="auto.bigl">des prospects d'un coach reçoivent une réponse instantanée</div>
         <ul>
-          <li><span class="chk"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#101C3A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg></span>Zéro prospect oublié — chaque contact capturé et organisé.</li>
-          <li><span class="chk"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#101C3A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg></span>Réponse immédiate 24h/24, même hors ligne.</li>
-          <li><span class="chk"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#101C3A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg></span>Personnalisation, sécurisation et déploiement du site inclus.</li>
+          <li><span class="chk"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#101C3A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg></span><span data-i18n="auto.li1">Zéro prospect oublié — chaque contact capturé et organisé.</span></li>
+          <li><span class="chk"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#101C3A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg></span><span data-i18n="auto.li2">Réponse immédiate 24h/24, même hors ligne.</span></li>
+          <li><span class="chk"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#101C3A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg></span><span data-i18n="auto.li3">Personnalisation, sécurisation et déploiement du site inclus.</span></li>
         </ul>
       </div>
     </div>
@@ -434,21 +466,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="avis" class="testi">
   <div class="wrap">
     <div class="shead center reveal">
-      <span class="eyebrow">Ils m'ont fait confiance</span>
-      <h2>Ce qu'en disent mes clients</h2>
+      <span class="eyebrow" data-i18n="testi.eyebrow">Ils m'ont fait confiance</span>
+      <h2 data-i18n="testi.h2">Ce qu'en disent mes clients</h2>
     </div>
     <div class="testi-grid">
       <div class="testi-card reveal">
         <div class="stars">★★★★★</div>
-        <p>« Très bonne expérience avec Imad qui s'avère être très fiable et professionnel ! Si j'ai de nouveau des besoins, je n'hésiterai pas ! »</p>
-        <div class="who"><span class="av">BP</span><span>Baptiste Pechery<small>Client</small></span></div>
+        <p data-i18n="testi.q1">« Très bonne expérience avec Imad qui s'avère être très fiable et professionnel ! Si j'ai de nouveau des besoins, je n'hésiterai pas ! »</p>
+        <div class="who"><span class="av">BP</span><span>Baptiste Pechery<small data-i18n="testi.r1">Client</small></span></div>
       </div>
       <div class="testi-card reveal">
         <div class="stars">★★★★★</div>
-        <p>« Grâce à son expertise, Imad a amélioré toute l'expérience utilisateur de mon projet : formulaire d'inscription optimisé, envoi automatique des emails et du programme PDF après inscription… J'ai surtout apprécié sa disponibilité, sa réactivité et son envie d'aider. Je le recommande vivement pour l'automatisation et l'optimisation de processus. »</p>
-        <div class="who"><span class="av">CB</span><span>Coach B<small>Projet sportif communautaire</small></span></div>
+        <p data-i18n="testi.q2">« Grâce à son expertise, Imad a amélioré toute l'expérience utilisateur de mon projet : formulaire d'inscription optimisé, envoi automatique des emails et du programme PDF après inscription… J'ai surtout apprécié sa disponibilité, sa réactivité et son envie d'aider. Je le recommande vivement pour l'automatisation et l'optimisation de processus. »</p>
+        <div class="who"><span class="av">CB</span><span>Coach B<small data-i18n="testi.r2">Projet sportif communautaire</small></span></div>
       </div>
     </div>
+    <p class="testi-note" data-i18n="testi.note"></p>
   </div>
 </section>
 
@@ -456,34 +489,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="faq" class="faq">
   <div class="wrap">
     <div class="shead center reveal">
-      <span class="eyebrow">Questions fréquentes</span>
-      <h2>Vous vous posez sûrement ces questions</h2>
+      <span class="eyebrow" data-i18n="faq.eyebrow">Questions fréquentes</span>
+      <h2 data-i18n="faq.h2">Vous vous posez sûrement ces questions</h2>
     </div>
     <div class="faq-list reveal">
       <details class="faq-item">
-        <summary>Faut-il déjà faire de la publicité pour travailler avec vous ?
+        <summary><span data-i18n="faq.q1">Faut-il déjà faire de la publicité pour travailler avec vous ?</span>
           <svg class="plus" viewBox="0 0 24 24" fill="none" stroke="#C69E4E" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
-        <div class="ans">Non, on peut partir de zéro. Je vous accompagne de A à Z : de la mise en place du tracking au déploiement et au pilotage de vos campagnes.</div>
+        <div class="ans" data-i18n="faq.a1">Non, on peut partir de zéro. Je vous accompagne de A à Z : de la mise en place du tracking au déploiement et au pilotage de vos campagnes.</div>
       </details>
       <details class="faq-item">
-        <summary>Quel budget publicitaire minimum prévoir ?
+        <summary><span data-i18n="faq.q2">Quel budget publicitaire minimum prévoir ?</span>
           <svg class="plus" viewBox="0 0 24 24" fill="none" stroke="#C69E4E" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
-        <div class="ans">Cela dépend des plateformes et du trafic que vous avez déjà. Pour un démarrage, je recommande un budget média d'environ 30 €/jour.</div>
+        <div class="ans" data-i18n="faq.a2">Cela dépend des plateformes et du trafic que vous avez déjà. Pour un démarrage, je recommande un budget média d'environ 30 €/jour, soit environ 40 $/jour.</div>
       </details>
       <details class="faq-item">
-        <summary>Sous combien de temps voit-on les premiers résultats ?
+        <summary><span data-i18n="faq.q3">Sous combien de temps voit-on les premiers résultats ?</span>
           <svg class="plus" viewBox="0 0 24 24" fill="none" stroke="#C69E4E" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
-        <div class="ans">On observe généralement les premiers résultats avant deux semaines. Ensuite, cela évolue selon plusieurs facteurs : période, secteur, concurrence…</div>
+        <div class="ans" data-i18n="faq.a3">On observe généralement les premiers résultats avant deux semaines. Ensuite, cela évolue selon plusieurs facteurs : période, secteur, concurrence…</div>
       </details>
       <details class="faq-item">
-        <summary>Comment se déroule la collaboration et qu'est-ce qui est inclus ?
+        <summary><span data-i18n="faq.q4">Comment se déroule la collaboration et qu'est-ce qui est inclus ?</span>
           <svg class="plus" viewBox="0 0 24 24" fill="none" stroke="#C69E4E" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
-        <div class="ans">Tout dépend de vos besoins et du forfait choisi (forfaits à venir) : de la stratégie à l'optimisation, en passant par un reporting clair et le tracking, je cale l'accompagnement sur vos objectifs.</div>
+        <div class="ans" data-i18n="faq.a4">Tout dépend de vos besoins et du forfait choisi (forfaits à venir) : de la stratégie à l'optimisation, en passant par un reporting clair et le tracking, je cale l'accompagnement sur vos objectifs.</div>
       </details>
       <details class="faq-item">
-        <summary>Sur quelles plateformes intervenez-vous ? Gérez-vous le tracking et l'automatisation ?
+        <summary><span data-i18n="faq.q5">Sur quelles plateformes intervenez-vous ? Gérez-vous le tracking et l'automatisation ?</span>
           <svg class="plus" viewBox="0 0 24 24" fill="none" stroke="#C69E4E" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
-        <div class="ans">Côté publicité, cela dépend de votre cible : Meta Ads, Google Ads (Display principalement / DV360) et d'autres selon le besoin. Pour le tracking, j'utilise les outils Google (GTM &amp; GA4), gratuits. Pour l'automatisation, je travaille avec Make (des frais s'appliquent selon la complexité).</div>
+        <div class="ans" data-i18n="faq.a5">Côté publicité, cela dépend de votre cible : Meta Ads, Google Ads (Display principalement / DV360) et d'autres selon le besoin. Pour le tracking, j'utilise les outils Google (GTM &amp; GA4), gratuits. Pour l'automatisation, je travaille avec Make (des frais s'appliquent selon la complexité).</div>
       </details>
     </div>
   </div>
@@ -493,47 +526,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="contact" class="contact">
   <div class="wrap contact-grid">
     <div class="contact-info reveal">
-      <span class="eyebrow">Contact</span>
-      <h2>Prêt à relancer le moteur ?</h2>
-      <p class="lead">Parlez-moi de votre activité. On en discute lors d'un <strong>premier appel offert de 30 minutes</strong>, puis je reviens vers vous avec des pistes concrètes pour booster vos résultats.</p>
+      <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+      <h2 data-i18n="contact.h2">Prêt à relancer le moteur ?</h2>
+      <p class="lead" data-i18n="contact.lead">Parlez-moi de votre activité. On en discute lors d'un <strong>premier appel offert de 30 minutes</strong>, puis je reviens vers vous avec des pistes concrètes pour booster vos résultats.</p>
       <div class="call-badge reveal">
         <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#101C3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></span>
-        <span><b>1er call offert &middot; 30 min</b><small>On fait le point sur votre activité et vos campagnes, sans engagement.</small></span>
+        <span><b data-i18n="contact.badgeb">1er call offert &middot; 30 min</b><small data-i18n="contact.badges">On fait le point sur votre activité et vos campagnes, sans engagement.</small></span>
       </div>
       <div class="line"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E0B25C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>imad.rachedi.pro@gmail.com</div>
       <div class="line"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E0B25C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></span>+33 6 52 50 99 47</div>
-      <a class="wa-btn cta-track" data-cta="contact_whatsapp" href="https://wa.me/33652509947?text=Bonjour%20Imad%2C%20je%20souhaite%20r%C3%A9server%20mon%201er%20call%20offert%20de%2030%20min." target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.7-6.1c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.5l.4-.5.3-.5v-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7s1.9 2.9 4.6 4c1.6.7 2.2.7 3 .6.5 0 1.5-.6 1.7-1.2s.2-1.1.1-1.2-.2-.2-.5-.3z"/></svg>Réserver mon call sur WhatsApp</a>
+      <a class="wa-btn cta-track" data-cta="contact_whatsapp" id="waBtn" href="https://wa.me/33652509947?text=Bonjour%20Imad%2C%20je%20souhaite%20r%C3%A9server%20mon%201er%20call%20offert%20de%2030%20min." target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.7-6.1c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.5l.4-.5.3-.5v-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7s1.9 2.9 4.6 4c1.6.7 2.2.7 3 .6.5 0 1.5-.6 1.7-1.2s.2-1.1.1-1.2-.2-.2-.5-.3z"/></svg><span data-i18n="contact.wa">Réserver mon call sur WhatsApp</span></a>
     </div>
 
     <form id="leadForm" novalidate>
       <div class="field-row">
         <div class="field">
-          <label for="prenom">Votre prénom</label>
-          <input id="prenom" name="prenom" type="text" placeholder="Prénom" required />
+          <label for="prenom" data-i18n="f.prenom">Votre prénom</label>
+          <input id="prenom" name="prenom" type="text" placeholder="Prénom" data-i18n-ph="f.prenom.ph" required />
         </div>
         <div class="field">
-          <label for="nom">Votre nom</label>
-          <input id="nom" name="nom" type="text" placeholder="Nom" required />
+          <label for="nom" data-i18n="f.nom">Votre nom</label>
+          <input id="nom" name="nom" type="text" placeholder="Nom" data-i18n-ph="f.nom.ph" required />
         </div>
       </div>
       <div class="field">
-        <label for="email">Votre email</label>
-        <input id="email" name="email" type="email" placeholder="vous@email.com" required />
+        <label for="email" data-i18n="f.email">Votre email</label>
+        <input id="email" name="email" type="email" placeholder="vous@email.com" data-i18n-ph="f.email.ph" required />
       </div>
       <div class="field">
-        <label for="telephone">Votre téléphone</label>
-        <input id="telephone" name="telephone" type="tel" placeholder="06 12 34 56 78" />
+        <label for="telephone" data-i18n="f.tel">Votre téléphone</label>
+        <input id="telephone" name="telephone" type="tel" placeholder="06 12 34 56 78" data-i18n-ph="f.tel.ph" />
       </div>
       <div class="field">
-        <label for="secteur">Votre activité / secteur</label>
-        <input id="secteur" name="secteur" type="text" placeholder="Ex : coach, e-commerce, restaurant…" />
+        <label for="secteur" data-i18n="f.secteur">Votre activité / secteur</label>
+        <input id="secteur" name="secteur" type="text" placeholder="Ex : coach, e-commerce, restaurant…" data-i18n-ph="f.secteur.ph" />
       </div>
       <div class="field">
-        <label for="message">Votre besoin en quelques mots</label>
-        <textarea id="message" name="message" placeholder="Parlez-moi de votre projet ou de vos campagnes actuelles…"></textarea>
+        <label for="message" data-i18n="f.msg">Votre besoin en quelques mots</label>
+        <textarea id="message" name="message" placeholder="Parlez-moi de votre projet ou de vos campagnes actuelles…" data-i18n-ph="f.msg.ph"></textarea>
       </div>
-      <button type="submit" class="btn btn-gold" id="submitBtn">Demander mon call offert</button>
-      <p class="rgpd">En envoyant ce formulaire, vous acceptez que vos données (nom, email, message) soient utilisées uniquement pour traiter votre demande et vous recontacter. Elles ne sont ni revendues ni partagées, et vous pouvez demander leur suppression à tout moment.</p>
+      <button type="submit" class="btn btn-gold" id="submitBtn" data-i18n="f.submit">Demander mon call offert</button>
+      <p class="rgpd" data-i18n="f.rgpd">En envoyant ce formulaire, vous acceptez que vos données (nom, email, message) soient utilisées uniquement pour traiter votre demande et vous recontacter. Elles ne sont ni revendues ni partagées, et vous pouvez demander leur suppression à tout moment.</p>
       <p class="form-msg" id="formMsg"></p>
     </form>
   </div>
@@ -542,17 +575,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <footer>
   <div class="wrap">
     <div class="foot">
-      <a href="#" class="brand"><img src="logo.png" alt="" style="width:46px;height:46px;border-radius:50%"><span style="font-weight:700;color:#fff">Imad Hachemi-Rachedi<small style="display:block;font-weight:500">Media Buyer &amp; Spécialiste Automation</small></span></a>
+      <a href="#" class="brand"><img src="logo.png" alt="" style="width:46px;height:46px;border-radius:50%"><span style="font-weight:700;color:#fff">Imad Hachemi-Rachedi<small style="display:block;font-weight:500" data-i18n="footer.sub">Media Buyer &amp; Spécialiste Automation</small></span></a>
       <div style="display:flex;gap:26px;font-size:.92rem">
-        <a href="#services">Services</a>
-        <a href="#process">Méthode</a>
-        <a href="#resultats">Résultats</a>
-        <a href="#avis">Avis</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#process" data-i18n="nav.process">Méthode</a>
+        <a href="#resultats" data-i18n="nav.results">Résultats</a>
+        <a href="#avis" data-i18n="nav.reviews">Avis</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="#contact" data-i18n="contact.eyebrow">Contact</a>
       </div>
     </div>
-    <div class="foot-bottom">&copy; <span id="yr"></span> Imad Hachemi-Rachedi — Media Buyer &amp; Spécialiste Automation · Sur devis</div>
+    <div class="foot-bottom">&copy; <span id="yr"></span> <span data-i18n="footer.bottom">Imad Hachemi-Rachedi — Media Buyer &amp; Spécialiste Automation · Sur devis</span></div>
   </div>
 </footer>
 
@@ -560,6 +593,227 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // ====== CONFIG : colle ici l'URL de ton webhook Make ======
   const WEBHOOK_URL = "https://hook.eu2.make.com/1xmjvnnraa17jq4t6yfyio8v52l08okl";
   // ==========================================================
+
+
+  /* ===================== TRADUCTION FR / EN =====================
+     Pour modifier un texte : repere sa cle (data-i18n="..." dans le HTML)
+     et edite la valeur ci-dessous dans fr et/ou en.
+     Lien direct en anglais pour la prospection : .../?lang=en
+  ============================================================== */
+  const I18N = {
+    fr: {
+      "meta.title":"Imad Hachemi-Rachedi — Media Buyer & Publicité qui performe",
+      "meta.desc":"Je booste votre activité, vous vous occupez du reste. Campagnes publicitaires Meta Ads, Google Ads, DV360 et programmatique, conçues pour générer des leads qualifiés.",
+      "nav.sub":"Media Buyer · Publicité performante",
+      "nav.services":"Services","nav.process":"Méthode","nav.results":"Résultats","nav.reviews":"Avis","nav.faq":"FAQ","nav.contact":"Prendre contact",
+      "hero.eyebrow":"Media Buying · Publicité en ligne",
+      "hero.h1":"Je booste votre activité, <span class=\"hl\">vous vous occupez du reste.</span>",
+      "hero.sub":"Vos pubs calent ? Je relance le moteur — et les leads suivent.",
+      "hero.cta1":"Lancer mes campagnes","hero.cta2":"Voir mes résultats",
+      "hero.note":"Stratégie · Création · Optimisation · Reporting — sur devis.",
+      "platforms.label":"Je gère vos campagnes sur",
+      "services.eyebrow":"Ce que je fais",
+      "services.h2":"Une publicité pensée pour ramener des clients",
+      "services.lead":"Branding, notoriété, performance — à chaque objectif sa stratégie. Je m'occupe de toute la chaîne, vous suivez les résultats.",
+      "s1.h":"Stratégie &amp; ciblage","s1.p":"J'identifie vos meilleures audiences et je bâtis un plan d'acquisition aligné sur vos objectifs réels.",
+      "s2.h":"Création &amp; lancement","s2.p":"Visuels et messages qui accrochent, campagnes structurées et lancées proprement sur les bonnes plateformes.",
+      "s3.h":"Optimisation &amp; reporting","s3.p":"Je surveille, j'ajuste et je vous rends compte clairement : ce qui marche, ce que ça rapporte, où l'on va.",
+      "process.eyebrow":"Comment ça se passe","process.h2":"Une méthode simple, du premier contact aux résultats",
+      "p1.h":"Audit","p1.p":"On fait le point sur votre activité, vos objectifs et vos campagnes actuelles.",
+      "p2.h":"Stratégie","p2.p":"Je conçois le plan d'acquisition : audiences, messages, budget, plateformes.",
+      "p3.h":"Lancement","p3.p":"Je crée et lance vos campagnes, prêtes à capter des leads dès le jour 1.",
+      "p4.h":"Optimisation","p4.p":"J'analyse, j'ajuste et je fais monter les performances en continu.",
+      "results.eyebrow":"Mes résultats","results.h2":"Des campagnes qui performent, levier par levier",
+      "results.lead":"Un aperçu de performances concrètes en media buying, plateforme par plateforme.",
+      "stat1.n":"+2,6 M€","stat1.l":"Budget publicitaire géré",
+      "stat2.n":"+100","stat2.l":"Campagnes pilotées",
+      "stat3.n":"+10","stat3.l":"Plateformes (dont Meta Ads)",
+      "stat4.n":"+10","stat4.l":"Pays couverts",
+      "results.note":"Voici un échantillon de mes +100 campagnes, pilotées dans le cadre de mon expérience en agence. Les annonceurs sont rendus anonymes par souci de confidentialité.",
+      "c2.h":"Secteur du tourisme · Europe","c2.o":"Objectif : considération (leads)","c2.m1":"Coût par lead","c2.m2":"CPM vs benchmark*",
+      "c3.t":"Vidéo · YouTube","c3.h":"Secteur du tourisme","c3.o":"Objectif : notoriété (vues vidéo)","c3.m1":"Coût / vue vidéo",
+      "c1.h":"Secteur du divertissement · MEA","c1.o":"Objectif : conversion (acquisition)","c1.m1":"Coût par acquisition",
+      "c4.t":"Vidéo · Amazon (Twitch)","c4.h":"Secteur du divertissement","c4.o":"Objectif : notoriété (vues vidéo)","c4.m1":"Coût / vue vidéo",
+      "c5.h":"Secteur formation / éducation","c5.o":"Objectif : génération de leads","c5.m1":"Téléchargements brochure &amp; RDV",
+      "c6.h":"Secteur de l'énergie","c6.o":"Objectif : acquisition","c6.v":"-30 €","c6.m1":"Coût d'acquisition",
+      "results.foot":"* CPM inférieur au benchmark global du marché sur la zone concernée. Chiffres relatifs, annonceurs anonymisés.",
+      "auto.eyebrow":"Bonus · Au-delà de la pub","auto.h2":"J'automatise aussi votre acquisition",
+      "auto.lead":"Pendant que vos pubs tournent, j'automatise ce qui vous fait perdre du temps : capture des leads, réponses, suivi, reporting.",
+      "auto.h3":"Gagnez des heures chaque semaine",
+      "auto.p1":"Ce que vous faites à la main chaque jour — relances, saisie, suivi des prospects — l'automatisation peut le faire pour vous, sans erreur et 24h/24.",
+      "auto.p2":"Résultat : vos leads publicitaires sont captés, traités et suivis automatiquement, sans qu'aucun ne passe à la trappe.",
+      "auto.mini":"Une publicité qui ramène des leads, un système qui les transforme.",
+      "auto.tag":"Cas concret · Automatisation","auto.bigl":"des prospects d'un coach reçoivent une réponse instantanée",
+      "auto.li1":"Zéro prospect oublié — chaque contact capturé et organisé.",
+      "auto.li2":"Réponse immédiate 24h/24, même hors ligne.",
+      "auto.li3":"Personnalisation, sécurisation et déploiement du site inclus.",
+      "testi.eyebrow":"Ils m'ont fait confiance","testi.h2":"Ce qu'en disent mes clients",
+      "testi.q1":"« Très bonne expérience avec Imad qui s'avère être très fiable et professionnel ! Si j'ai de nouveau des besoins, je n'hésiterai pas ! »",
+      "testi.r1":"Client",
+      "testi.q2":"« Grâce à son expertise, Imad a amélioré toute l'expérience utilisateur de mon projet : formulaire d'inscription optimisé, envoi automatique des emails et du programme PDF après inscription… J'ai surtout apprécié sa disponibilité, sa réactivité et son envie d'aider. Je le recommande vivement pour l'automatisation et l'optimisation de processus. »",
+      "testi.r2":"Projet sportif communautaire","testi.note":"",
+      "faq.eyebrow":"Questions fréquentes","faq.h2":"Vous vous posez sûrement ces questions",
+      "faq.q1":"Faut-il déjà faire de la publicité pour travailler avec vous ?",
+      "faq.a1":"Non, on peut partir de zéro. Je vous accompagne de A à Z : de la mise en place du tracking au déploiement et au pilotage de vos campagnes.",
+      "faq.q2":"Quel budget publicitaire minimum prévoir ?",
+      "faq.a2":"Cela dépend des plateformes et du trafic que vous avez déjà. Pour un démarrage, je recommande un budget média d'environ 30 €/jour, soit environ 40 $/jour.",
+      "faq.q3":"Sous combien de temps voit-on les premiers résultats ?",
+      "faq.a3":"On observe généralement les premiers résultats avant deux semaines. Ensuite, cela évolue selon plusieurs facteurs : période, secteur, concurrence…",
+      "faq.q4":"Comment se déroule la collaboration et qu'est-ce qui est inclus ?",
+      "faq.a4":"Tout dépend de vos besoins et du forfait choisi (forfaits à venir) : de la stratégie à l'optimisation, en passant par un reporting clair et le tracking, je cale l'accompagnement sur vos objectifs.",
+      "faq.q5":"Sur quelles plateformes intervenez-vous ? Gérez-vous le tracking et l'automatisation ?",
+      "faq.a5":"Côté publicité, cela dépend de votre cible : Meta Ads, Google Ads (Display principalement / DV360) et d'autres selon le besoin. Pour le tracking, j'utilise les outils Google (GTM &amp; GA4), gratuits. Pour l'automatisation, je travaille avec Make (des frais s'appliquent selon la complexité).",
+      "contact.eyebrow":"Contact","contact.h2":"Prêt à relancer le moteur ?",
+      "contact.lead":"Parlez-moi de votre activité. On en discute lors d'un <strong>premier appel offert de 30 minutes</strong>, puis je reviens vers vous avec des pistes concrètes pour booster vos résultats.",
+      "contact.badgeb":"1er call offert &middot; 30 min","contact.badges":"On fait le point sur votre activité et vos campagnes, sans engagement.",
+      "contact.wa":"Réserver mon call sur WhatsApp",
+      "contact.watext":"Bonjour Imad, je souhaite réserver mon 1er call offert de 30 min.",
+      "f.prenom":"Votre prénom","f.prenom.ph":"Prénom","f.nom":"Votre nom","f.nom.ph":"Nom",
+      "f.email":"Votre email","f.email.ph":"vous@email.com","f.tel":"Votre téléphone","f.tel.ph":"06 12 34 56 78",
+      "f.secteur":"Votre activité / secteur","f.secteur.ph":"Ex : coach, e-commerce, restaurant…",
+      "f.msg":"Votre besoin en quelques mots","f.msg.ph":"Parlez-moi de votre projet ou de vos campagnes actuelles…",
+      "f.submit":"Demander mon call offert","f.sending":"Envoi…",
+      "f.rgpd":"En envoyant ce formulaire, vous acceptez que vos données (nom, email, message) soient utilisées uniquement pour traiter votre demande et vous recontacter. Elles ne sont ni revendues ni partagées, et vous pouvez demander leur suppression à tout moment.",
+      "f.err":"Merci de renseigner au moins votre prénom, nom et email.",
+      "f.ok":"Merci {name} ! Votre demande est bien arrivée. Je reviens vers vous très rapidement pour parler de votre projet.",
+      "f.fail":"Oups, l'envoi a échoué. Réessayez ou écrivez-moi à imad.rachedi.pro@gmail.com.",
+      "footer.sub":"Media Buyer &amp; Spécialiste Automation",
+      "footer.bottom":"Imad Hachemi-Rachedi — Media Buyer &amp; Spécialiste Automation · Sur devis"
+    },
+    en: {
+      "meta.title":"Imad Hachemi-Rachedi — Media Buyer & Advertising That Performs",
+      "meta.desc":"I grow your business, you focus on the rest. Meta Ads, Google Ads, DV360 and programmatic campaigns built to generate qualified leads.",
+      "nav.sub":"Media Buyer · Performance advertising",
+      "nav.services":"Services","nav.process":"Method","nav.results":"Results","nav.reviews":"Reviews","nav.faq":"FAQ","nav.contact":"Get in touch",
+      "hero.eyebrow":"Media Buying · Online advertising",
+      "hero.h1":"I grow your business, <span class=\"hl\">you focus on the rest.</span>",
+      "hero.sub":"Ads stalling? I restart the engine — and the leads follow.",
+      "hero.cta1":"Launch my campaigns","hero.cta2":"See my results",
+      "hero.note":"Strategy · Creative · Optimisation · Reporting — on quotation.",
+      "platforms.label":"I run your campaigns on",
+      "services.eyebrow":"What I do",
+      "services.h2":"Advertising built to bring in customers",
+      "services.lead":"Branding, awareness, performance — every objective has its own strategy. I handle the whole chain, you watch the results.",
+      "s1.h":"Strategy &amp; targeting","s1.p":"I identify your best audiences and build an acquisition plan aligned with your real objectives.",
+      "s2.h":"Creative &amp; launch","s2.p":"Visuals and messages that land, campaigns structured and launched properly on the right platforms.",
+      "s3.h":"Optimisation &amp; reporting","s3.p":"I monitor, I adjust and I report clearly: what works, what it returns, where we go next.",
+      "process.eyebrow":"How it works","process.h2":"A simple method, from first contact to results",
+      "p1.h":"Audit","p1.p":"We review your business, your objectives and your current campaigns.",
+      "p2.h":"Strategy","p2.p":"I design the acquisition plan: audiences, messages, budget, platforms.",
+      "p3.h":"Launch","p3.p":"I build and launch your campaigns, ready to capture leads from day one.",
+      "p4.h":"Optimisation","p4.p":"I analyse, I adjust and I keep pushing performance up.",
+      "results.eyebrow":"My results","results.h2":"Campaigns that perform, channel by channel",
+      "results.lead":"A snapshot of concrete media buying performance, platform by platform.",
+      "stat1.n":"€2.6M+","stat1.l":"Media budget managed",
+      "stat2.n":"100+","stat2.l":"Campaigns managed",
+      "stat3.n":"10+","stat3.l":"Platforms (including Meta Ads)",
+      "stat4.n":"10+","stat4.l":"Countries covered",
+      "results.note":"A sample of my 100+ campaigns, run during my agency experience. Advertisers are anonymised for confidentiality.",
+      "c2.h":"Tourism sector · Europe","c2.o":"Objective: consideration (leads)","c2.m1":"Cost per lead","c2.m2":"CPM vs benchmark*",
+      "c3.t":"Video · YouTube","c3.h":"Tourism sector","c3.o":"Objective: awareness (video views)","c3.m1":"Cost per video view",
+      "c1.h":"Entertainment sector · MEA","c1.o":"Objective: conversion (acquisition)","c1.m1":"Cost per acquisition",
+      "c4.t":"Video · Amazon (Twitch)","c4.h":"Entertainment sector","c4.o":"Objective: awareness (video views)","c4.m1":"Cost per video view",
+      "c5.h":"Education &amp; training sector","c5.o":"Objective: lead generation","c5.m1":"Brochure downloads &amp; meetings",
+      "c6.h":"Energy sector","c6.o":"Objective: acquisition","c6.v":"-€30","c6.m1":"Cost per acquisition",
+      "results.foot":"* CPM below the overall market benchmark in the relevant region. Relative figures, advertisers anonymised.",
+      "auto.eyebrow":"Bonus · Beyond advertising","auto.h2":"I also automate your acquisition",
+      "auto.lead":"While your ads run, I automate what eats your time: lead capture, replies, follow-up, reporting.",
+      "auto.h3":"Save hours every week",
+      "auto.p1":"What you do by hand every day — follow-ups, data entry, prospect tracking — automation can do for you, error-free and around the clock.",
+      "auto.p2":"The result: your advertising leads are captured, processed and followed up automatically, with none slipping through.",
+      "auto.mini":"Advertising that brings leads, a system that converts them.",
+      "auto.tag":"Case study · Automation","auto.bigl":"of a coach\u2019s prospects receive an instant reply",
+      "auto.li1":"Zero forgotten prospect — every contact captured and organised.",
+      "auto.li2":"Immediate reply 24/7, even offline.",
+      "auto.li3":"Customisation, security and site deployment included.",
+      "testi.eyebrow":"They trusted me","testi.h2":"What my clients say",
+      "testi.q1":"“Great experience with Imad, who turned out to be very reliable and professional! If I have further needs, I won\u2019t hesitate!”",
+      "testi.r1":"Client",
+      "testi.q2":"“Thanks to his expertise, Imad improved the entire user experience of my project: optimised sign-up form, automatic emails and PDF programme sent after registration… I especially appreciated his availability, his responsiveness and his willingness to help. I highly recommend him for automation and process optimisation.”",
+      "testi.r2":"Community sports project",
+      "testi.note":"Testimonials originally written in French, translated into English.",
+      "faq.eyebrow":"FAQ","faq.h2":"You are probably wondering",
+      "faq.q1":"Do I need to be running ads already to work with you?",
+      "faq.a1":"No, we can start from scratch. I support you end to end: from setting up tracking to deploying and running your campaigns.",
+      "faq.q2":"What minimum advertising budget should I plan for?",
+      "faq.a2":"It depends on the platforms and the traffic you already have. To get started, I recommend a media budget of around US$40/day (about €30/day).",
+      "faq.q3":"How long before the first results?",
+      "faq.a3":"You usually see the first results within two weeks. After that it evolves depending on several factors: season, sector, competition…",
+      "faq.q4":"How does the collaboration work and what is included?",
+      "faq.a4":"It depends on your needs and the package chosen (packages coming soon): from strategy to optimisation, including clear reporting and tracking, I tailor the support to your objectives.",
+      "faq.q5":"Which platforms do you work on? Do you handle tracking and automation?",
+      "faq.a5":"On the advertising side it depends on your audience: Meta Ads, Google Ads (mainly Display / DV360) and others as needed. For tracking I use Google\u2019s free tools (GTM &amp; GA4). For automation I work with Make (fees apply depending on complexity).",
+      "contact.eyebrow":"Contact","contact.h2":"Ready to restart the engine?",
+      "contact.lead":"Tell me about your business. We discuss it on a <strong>free 30-minute first call</strong>, then I come back to you with concrete ideas to boost your results.",
+      "contact.badgeb":"First call free &middot; 30 min","contact.badges":"We review your business and your campaigns, with no commitment.",
+      "contact.wa":"Book my call on WhatsApp",
+      "contact.watext":"Hello Imad, I would like to book my free 30-minute first call.",
+      "f.prenom":"Your first name","f.prenom.ph":"First name","f.nom":"Your last name","f.nom.ph":"Last name",
+      "f.email":"Your email","f.email.ph":"you@email.com","f.tel":"Your phone number","f.tel.ph":"+971 50 123 4567",
+      "f.secteur":"Your business / industry","f.secteur.ph":"E.g. coach, e-commerce, restaurant…",
+      "f.msg":"Your needs in a few words","f.msg.ph":"Tell me about your project or your current campaigns…",
+      "f.submit":"Request my free call","f.sending":"Sending…",
+      "f.rgpd":"By submitting this form, you agree that your data (name, email, message) will be used only to handle your request and get back to you. It is never sold or shared, and you can request its deletion at any time.",
+      "f.err":"Please provide at least your first name, last name and email.",
+      "f.ok":"Thank you {name}! Your request has arrived. I will get back to you very shortly to discuss your project.",
+      "f.fail":"Sorry, sending failed. Please try again or email me at imad.rachedi.pro@gmail.com.",
+      "footer.sub":"Media Buyer &amp; Automation Specialist",
+      "footer.bottom":"Imad Hachemi-Rachedi — Media Buyer &amp; Automation Specialist · On quotation"
+    }
+  };
+
+  const WA_NUMBER = "33652509947";
+  let LANG = "fr";
+  const t = (key) => (I18N[LANG] && I18N[LANG][key] !== undefined) ? I18N[LANG][key] : (I18N.fr[key] || "");
+
+  function pickLang(){
+    const url = new URLSearchParams(location.search).get("lang");
+    if (url && I18N[url.toLowerCase()]) return url.toLowerCase();
+    try { const sv = localStorage.getItem("lang"); if (sv && I18N[sv]) return sv; } catch(e){}
+    return (navigator.language || "fr").toLowerCase().startsWith("fr") ? "fr" : "en";
+  }
+
+  function applyLang(lang, push){
+    LANG = I18N[lang] ? lang : "fr";
+    document.documentElement.lang = LANG;
+    document.title = t("meta.title");
+    const md = document.querySelector('meta[name="description"]');
+    if (md) md.setAttribute("content", t("meta.desc"));
+
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const v = I18N[LANG][el.dataset.i18n];
+      if (v !== undefined) el.innerHTML = v;
+    });
+    document.querySelectorAll("[data-i18n-ph]").forEach(el => {
+      const v = I18N[LANG][el.dataset.i18nPh];
+      if (v !== undefined) el.placeholder = v;
+    });
+
+    const wa = document.getElementById("waBtn");
+    if (wa) wa.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(t("contact.watext"));
+
+    document.querySelectorAll(".lang-btn").forEach(b => {
+      const on = b.dataset.lang === LANG;
+      b.classList.toggle("is-active", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+
+    try { localStorage.setItem("lang", LANG); } catch(e){}
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: push ? "language_switch" : "language_set", page_language: LANG });
+
+    if (push) {
+      const u = new URL(location.href);
+      u.searchParams.set("lang", LANG);
+      history.replaceState(null, "", u);
+    }
+  }
+
+  document.querySelectorAll(".lang-btn").forEach(b => {
+    b.addEventListener("click", () => applyLang(b.dataset.lang, true));
+  });
+  applyLang(pickLang(), false);
+  /* =================== FIN TRADUCTION FR / EN =================== */
 
   document.getElementById('yr').textContent = new Date().getFullYear();
 
@@ -587,27 +841,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     e.preventDefault();
     msg.className = 'form-msg';
     if (!form.prenom.value.trim() || !form.nom.value.trim() || !form.email.value.trim()) {
-      msg.textContent = "Merci de renseigner au moins votre prénom, nom et email.";
+      msg.textContent = t("f.err");
       msg.classList.add('err'); return;
     }
     const data = {
       prenom: form.prenom.value.trim(), nom: form.nom.value.trim(),
       email: form.email.value.trim(), telephone: form.telephone.value.trim(),
       secteur: form.secteur.value.trim(), message: form.message.value.trim(),
-      source: "Landing Page", date: new Date().toISOString()
+      source: "Landing Page", langue: LANG, date: new Date().toISOString()
     };
-    btn.disabled = true; btn.textContent = "Envoi…";
+    btn.disabled = true; btn.textContent = t("f.sending");
     try {
       await fetch(WEBHOOK_URL, { method:'POST', mode:'no-cors',
         body:new URLSearchParams(data) });
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: 'generate_lead', secteur: data.secteur });
-      msg.textContent = `Merci ${data.prenom} ! Votre demande est bien arrivée. Je reviens vers vous très rapidement pour parler de votre projet.`;
+      msg.textContent = t("f.ok").replace("{name}", data.prenom);
       msg.classList.add('ok'); form.reset();
     } catch (err) {
-      msg.textContent = "Oups, l'envoi a échoué. Réessayez ou écrivez-moi à imad.rachedi.pro@gmail.com.";
+      msg.textContent = t("f.fail");
       msg.classList.add('err');
-    } finally { btn.disabled = false; btn.textContent = "Demander mon call offert"; }
+    } finally { btn.disabled = false; btn.textContent = t("f.submit"); }
   });
 </script>
 </body>
